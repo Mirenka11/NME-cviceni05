@@ -1,6 +1,6 @@
 
 
-l = load('spline.dat.txt');
+l = load('spline.dat');
 
 n = size(l,1); % pocet zadanych bodu
 bodu = 100;    % pocet bodu pro vyhodnoceni
@@ -71,3 +71,4 @@ plot(xn, yn);
 hold on;
 plot(x,y,'rx');
 hold off;
+legend('Interpolovana funkce', 'Zadane body')

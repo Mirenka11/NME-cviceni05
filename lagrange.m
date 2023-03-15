@@ -40,7 +40,7 @@ for i = 1 : n   % zkousime ruzne stupne interpolacniho polynomu
     end
 
     eL=zeros(1,length(cx)); % hodnoty interpolacniho polynomu 
-    for k=1:lenth(cx) % upraveno z fixniho 1001 -- co kdybychom chteli zmenit pocet bodu??
+    for k=1:length(cx) % upraveno z fixniho 1001 -- co kdybychom chteli zmenit pocet bodu??
         eL(k) = Lagr(cx(k),xx,val,i); % hodnota polynomu v bode cx(k)
     end;
 

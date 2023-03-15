@@ -42,7 +42,10 @@ p1 = loglog(h_arr,abs( (odhad_1-deriv)./deriv ),'r-');
 hold on;
 p2 = loglog(h_arr,abs( (odhad_2-deriv)./deriv ),'g-');
 p3 = loglog(h_arr,abs( (odhad_5-deriv)./deriv ),'b-');
+xlabel('h') 
+ylabel('chyba odhadu') 
 legend([p1 p2 p3], {'prvni rad' 'druhy rad' 'paty rad'});
+
 hold off;
 
 end
